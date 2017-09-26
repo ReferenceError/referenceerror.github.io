@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #fffbeb;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 700px;
+  height: 600px;
+  position: relative;
+  margin-top: -10px;
+}
+@media (max-width: 700px) {
+  .box {
+    width: 100vw;
+    height: 70vh;
+  }
+}
+
+p {
+  position: absolute;
+  font-size: 12em;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  text-shadow: 1px 1px 1px #999;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  p {
+    font-size: 20vw;
+    transform: translate(-35vw, -50%);
+  }
+}
+
+.red {
+  color: #E42149;
+  mix-blend-mode: multiply;
+}
+
+.blue {
+  color: #0091E5;
+}
+
+.yellow {
+  color: #FFF146;
+}
+
+.first {
+  top: 48%;
+  left: 48%;
+}
+
+.second {
+  top: 49.5%;
+  left: 49.5%;
+}
+
+.third {
+  top: 51%;
+  left: 51%;
+}
+
+/* Links We Love */
+.links_we_love {
+  text-align: center;
+  padding: 30px;
+}
+
+.links {
+  padding: 10px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100px;
+  border: 1px solid;
+  transition: background 0.3s linear;
+}
+
+.links.twitter {
+  color: #1da1f2;
+  background-color: transparent;
+}
+.links.twitter:hover {
+  color: #fff;
+  background-color: #1da1f2;
+}
